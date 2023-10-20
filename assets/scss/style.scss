@@ -34,13 +34,17 @@ main {
     align-items: center;
 
     section {
-        background: linear-gradient(211deg, rgba(0,105,180,1) 33%, rgba(52,238,216,1) 100%);
-        border: 3px solid black;
+        background: linear-gradient(211deg, rgb(74, 74, 74) 33%, rgb(0, 0, 0) 100%);
+        border: 2px solid rgb(242, 255, 0);
         padding: 3%;
+        color: white;
+        border-radius: 25px;
+        box-shadow: 0 0 10px 2px rgb(0, 26, 176);
 
         h1 {
             margin-bottom: 15px;
             font-size: 3.5rem;
+            font-weight: 300;
         }
 
         p {
@@ -49,16 +53,22 @@ main {
         }
 
         div {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            max-width: 280px;
+            justify-content: center;
             
 
             button {
-                width: 70px;
+                width: 130px;
+                background-color: rgb(74, 74, 74);
                 padding-block: 5px;
-                margin: 0 auto;
-                border-radius: 5px;
+                margin: 0 0;
+                border-radius: 15px;
+                color: white;
+                font-size: 18px;
+                font-weight: 500;
             }
         }
     }
